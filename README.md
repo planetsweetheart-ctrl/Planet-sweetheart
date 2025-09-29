@@ -1,6 +1,6 @@
 # Planet Sweetheart - Deployment Guide 🚀
 
-## 🎯 QUICK DEPLOYMENT STEPS
+## 🎯 QUICK DEPLOYMENT STEPS. 
 
 ### Step 1: Deploy to Vercel
 1. Go to [vercel.com](https://vercel.com) and sign up/login
