@@ -2,11 +2,12 @@
   "name": "template-app-53",
   "version": "1.0.0",
   "main": "index.ts",
-  "scripts": {"scripts": {
-  "start": "react-scripts start",
+ "scripts": {
+  "start": "expo start",
   "build": "react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
+}
 }
     "start": "expo start",
     "android": "expo start --android",
