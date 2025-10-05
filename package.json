@@ -20,7 +20,9 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.0"
+    "@babel/core": "^7.22.0",
+    "react-refresh": "^0.14.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10"
   },
   "engines": {
     "node": ">=18",
