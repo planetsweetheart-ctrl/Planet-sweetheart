@@ -1,80 +1,41 @@
-# Planet Sweetheart - Deployment Guide 🚀
+# Planet Sweetheart App 🌎💋
 
-## 🎯 QUICK DEPLOYMENT STEPS. 
+**Created by Ethan Scarcelli / Divine Mission Business Conglomerate LLC**
 
-### Step 1: Deploy to Vercel
-1. Go to [vercel.com](https://vercel.com) and sign up/login
-2. Click "New Project"
-3. Upload the `static-deploy` folder contents:
-   - `index.html`
-   - `vercel.json`
-4. Click "Deploy"
-5. Your app will be live at: `your-project-name.vercel.app`
+A satirical digital media experience built with Vibecode (React Native + Node.js), designed as a cinematic decoy portal to the censorship-proof fan universe known as **Planet Sweetheart**.
 
-### Step 2: Add Custom Domains in Vercel
-1. In your Vercel project dashboard, go to "Settings" → "Domains"
-2. Add both domains:
-   - `planetsweetheart.com`
-   - `internetsweetheart.com`
-3. Vercel will provide DNS instructions for each domain
+---
 
-## 🌐 DNS SETUP FOR NAMECHEAP
+## ⚙️ Project Overview
+This folder contains the **compiled web build** of the Planet Sweetheart app for Netlify deployment.
 
-### For planetsweetheart.com:
-1. Login to Namecheap
-2. Go to Domain List → planetsweetheart.com → Manage
-3. Advanced DNS → Add these records:
+### Key Files:
+- `Index.html` → Main entry point
+- `assets/` → App media and compiled scripts
+- `_redirects` → Routing configuration for SPA behavior
+- `netlify.toml` → Netlify deployment configuration
+- `metadata.json` → Vibecode export metadata
 
-**Root Domain (@):**
-- Type: `CNAME`
-- Host: `@` 
-- Value: `cname.vercel-dns.com.`
-- TTL: `Automatic`
+---
 
-**WWW Subdomain:**
-- Type: `CNAME`
-- Host: `www`
-- Value: `cname.vercel-dns.com.`
-- TTL: `Automatic`
+## 🚀 Deployment Guide
 
-### For internetsweetheart.com:
-**Same DNS setup as above - both domains will point to the same app**
+1. **Upload to GitHub:**
+   - Create a new repository called `planet-sweetheart-app`.
+   - Upload these files (or drag & drop via GitHub desktop).
 
-## ⚡ ALTERNATIVE: Direct GitHub Deployment
+2. **Connect to Netlify:**
+   - Go to [Netlify](https://app.netlify.com/).
+   - Select **“Add new site → Import from GitHub.”**
+   - Connect to your `planet-sweetheart-app` repo.
+   - Set the **publish directory** to `/` (root).
 
-If you prefer GitHub:
-1. Create a new GitHub repository
-2. Upload these files:
-   - `index.html`
-   - `vercel.json`
-3. Connect the repo to Vercel
-4. Auto-deploy on every push
+3. **Optional Custom Domain:**
+   - Connect your domain `planetsweetheart.com` under **Domain settings**.
 
-## 🔧 DNS Records Summary
+---
 
-**What Vercel provides you:**
-- CNAME target: `cname.vercel-dns.com.`
-- Or A records (if they provide IP addresses instead)
-
-**What you add in Namecheap:**
-- @ → CNAME → `cname.vercel-dns.com.`
-- www → CNAME → `cname.vercel-dns.com.`
-
-## 📱 Features Included
-
-✅ Responsive design (mobile + desktop)
-✅ All social media links working
-✅ Press coverage section with screenshots
-✅ Ban counter with authentic styling  
-✅ SEO optimized with meta tags
-✅ Fast loading static HTML/CSS
-✅ Professional Planet Sweetheart branding
-
-## 🚀 LIVE IN 10 MINUTES!
-
-1. **Upload to Vercel** (2 minutes)
-2. **Add domains in Vercel** (2 minutes)  
-3. **Update DNS in Namecheap** (5 minutes)
-4. **Propagation time** (0-24 hours, usually instant)
-
-Your Planet Sweetheart digital revolution will be LIVE! 🔥
+## 💻 Local Preview
+To view locally, open `Index.html` in your browser or use a local server:
+```bash
+npx serve .
