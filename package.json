@@ -16,7 +16,7 @@
     "react-dom": "18.2.0",
     "react-native": "0.72.3",
     "react-native-web": "0.19.21",
-    "react-refresh": "^0.14.0"          // needed for hot reloading
+    "react-refresh": "^0.14.0"          
   },
   "devDependencies": {
     "@babel/core": "^7.22.0",
